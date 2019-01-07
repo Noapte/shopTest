@@ -12,8 +12,8 @@
           <div class='col-md-8'>{{product.productName}}</div>
         </div>
         <div class='row'>
-          <div class='col-md-4'>Code:</div>
-          <div class='col-md-8'>{{product.productCode | lowercase | convertToSpaces: '-'}}</div>
+          <div class='col-md-4'>Shop:</div>
+          <div class='col-md-8'>{{product.shop}}</div>
         </div>
         <div class='row'>
           <div class='col-md-4'>Description:</div>
@@ -21,18 +21,11 @@
         </div>
         <div class='row'>
           <div class='col-md-4'>Availability:</div>
-          <div class='col-md-8'>{{product.releaseDate}}</div>
+          <div class='col-md-8'>{{product.availability}}</div>
         </div>
         <div class='row'>
           <div class='col-md-4'>Price:</div>
-          <div class='col-md-8'>{{product.price|currency:'USD':'symbol'}}</div>
-        </div>
-        <div class='row'>
-          <div class='col-md-4'>5 Star Rating:</div>
-          <div class='col-md-8'>
-            <pm-star [rating]='product.starRating'>
-            </pm-star>
-          </div>
+          <div class='col-md-8'>{{product.price|currency:'€'}}</div>
         </div>
       </div>
 
